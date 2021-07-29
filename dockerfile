@@ -1,7 +1,6 @@
-FROM ubuntu:latest
+FROM python:latest
 
 RUN mkdir -p /opt/deltacheck
 WORKDIR /opt/deltacheck
 
 COPY requirements.txt /opt/deltacheck/
-CMD ['python3', 'app.py', 'install']
